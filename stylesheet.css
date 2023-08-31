@@ -71,4 +71,5 @@ a {
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-between;
+    padding-top: 100px;
 }
