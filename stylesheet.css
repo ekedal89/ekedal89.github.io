@@ -1,0 +1,136 @@
+h3,
+#sideinfo {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#headerpicture {
+    background-image: url(header.jpg);
+    height: auto;
+    padding-top: 100px;
+    padding-left: 500px;
+}
+
+#sidevalg {
+    text-decoration: underline;
+}
+
+#menyliste {
+    text-align: start;
+    list-style-type: none;
+    padding-top: 80px;
+}
+
+#hjemliste {
+    padding-top: 40px;
+}
+
+#adresse {
+    padding-top: 80px;
+    text-align: center;
+}
+
+#kontorstolbilde {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    padding-left: 500px;
+}
+
+#skrivebordbilde {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    padding-left: 400px;
+}
+
+#bokhyllebilde {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    padding-left: 400px;
+}
+
+#kaffemaskinbilde {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    padding-left: 400px;
+}
+
+#kaffemaskintekst {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    padding-left: 530px;
+    font-size: x-large;
+}
+
+#bokhylletekst {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    padding-left: 555px;
+    font-size: x-large;
+}
+
+#kontorstoltekst {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    padding-left: 590px;
+    font-size: x-large;
+}
+
+#skrivebordtekst {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    padding-left: 540px;
+    font-size: x-large;
+}
+
+.produktinfo {
+    left: 50%;
+    top: 50%;
+    width: 230px;
+    margin-top: -155px;
+    margin-left: -55px;
+    position: absolute
+}
+
+.lagerstatus {
+    left: 50%;
+    top: 50%;
+    width: 230px;
+    margin-top: 205px;
+    margin-left: -55px;
+    position: absolute;
+    border-style: solid;
+}
+
+.produktliste {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.gridtekst {
+    text-align: center;
+    justify-content: space-between;
+}
+
+.menybar {
+    display: flex;
+    justify-content: space-evenly;
+}
