@@ -1,0 +1,253 @@
+<html>
+ <head>
+  <title>
+   USN Start CoworkingSpace
+  </title>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #000;
+            padding: 0.5rem 1rem;
+        }
+        .navbar a {
+            color: #fff;
+            margin-right: 1rem;
+        }
+        .navbar a:last-child {
+            margin-right: 0;
+        }
+        .search-section {
+            background-color: #f8f9fa;
+            padding: 1rem;
+        }
+        .search-input,
+        .date-input {
+            border: 2px solid #ced4da;
+            border-radius: 0.25rem;
+            padding: 0.375rem 0.75rem;
+        }
+        .search-button {
+            background-color: #ff6c2f;
+            color: #fff;
+            border: none;
+            padding: 0.375rem 0.75rem;
+            margin-left: 0.5rem;
+            border-radius: 0.25rem;
+        }
+        .filter-dropdown {
+            background-color: #e9ecef;
+            border: 2px solid #ced4da;
+            padding: 0.375rem 1.75rem;
+            margin-left: 0.5rem;
+            border-radius: 0.25rem;
+        }
+        .event-card {
+            border: none;
+            margin-bottom: 1rem;
+        }
+        .event-image {
+            height: 160px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .event-date {
+            background-color: #ff6c2f;
+            color: #fff;
+            padding: 0.5rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            font-size: 0.875rem;
+        }
+        .event-info {
+            padding: 0.5rem;
+            background-color: #f8f9fa;
+        }
+        .event-title {
+            color: #333;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .event-time {
+            color: #666;
+            font-size: 0.875rem;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        .footer a {
+            color: #ff6c2f;
+            text-decoration: none;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 0.875rem;
+        }
+        .footer .contact-info {
+            margin-top: 1rem;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        .header-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .event-category {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+  </style>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg">
+   <div class="container">
+    <a href="#">
+     CoworkingSpace
+    </a>
+    <a href="#">
+     Tjenester og fasiliteter
+    </a>
+    <a href="#">
+     Arrangementer og Workshops
+    </a>
+    <a href="#">
+     Om oss
+    </a>
+    <a href="#">
+     Booking
+    </a>
+    <a href="#">
+     Bli medlem
+    </a>
+    <a class="ms-auto" href="#">
+     Logg inn
+    </a>
+   </div>
+  </nav>
+  <header class="position-relative text-center">
+   <img alt="Workshop text on a metallic background" class="header-image" height="400" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-sSsOulEoQY3dXtF2RiaK66Ja/user-XZ7Av8ZH1bvGvI0GdH7WwbAs/img-5SDlW8pU8unUkSWDZdJhoK5P.png?st=2024-02-06T20%3A57%3A57Z&amp;se=2024-02-06T22%3A57%3A57Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-02-06T03%3A17%3A58Z&amp;ske=2024-02-07T03%3A17%3A58Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=qE9gkM8gwzLOSjOpwat9WZtlYqKV0kuxczP%2BBgNyTc4%3D" width="1200"/>
+   <div class="header-title">
+    WORKSHOP
+   </div>
+  </header>
+  <section class="search-section">
+   <div class="container">
+    <div class="row">
+     <div class="col">
+      <input class="form-control search-input" placeholder="Søk etter arrangementer" type="text"/>
+     </div>
+     <div class="col-auto">
+      <input class="form-control date-input" type="date"/>
+     </div>
+     <div class="col-auto">
+      <button class="btn search-button">
+       Finn hendelser
+      </button>
+     </div>
+     <div class="col-auto">
+      <select class="form-select filter-dropdown">
+       <option selected="">
+        Skjul Filtre
+       </option>
+      </select>
+     </div>
+     <div class="col-auto">
+      <select class="form-select filter-dropdown">
+       <option selected="">
+        Foto
+       </option>
+      </select>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="events-section">
+   <div class="container">
+    <div class="row">
+     <div class="col">
+      <div class="d-flex justify-content-between align-items-center">
+       <div class="d-flex align-items-center">
+        <i class="fas fa-chevron-left">
+        </i>
+        <span class="event-category ms-2">
+         Kommer
+        </span>
+       </div>
+       <div>
+        <button class="btn btn-outline-secondary">
+         i dag
+        </button>
+       </div>
+      </div>
+      <div class="row mt-3">
+       <!-- Repeat for each event -->
+       <div class="col-md-4">
+        <div class="card event-card">
+         <img alt="Event image placeholder" class="card-img-top event-image" height="160" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-sSsOulEoQY3dXtF2RiaK66Ja/user-XZ7Av8ZH1bvGvI0GdH7WwbAs/img-RdXinfUsXkKjipPi1fsRZ0C7.png?st=2024-02-06T20%3A57%3A55Z&amp;se=2024-02-06T22%3A57%3A55Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-02-06T03%3A15%3A20Z&amp;ske=2024-02-07T03%3A15%3A20Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=7ZLItKGOHSjlaFOYD0lBRjSvqsOM3IEJagQrjOETERU%3D" width="300"/>
+         <div class="card-body p-0">
+          <div class="event-date">
+           15 FEB
+          </div>
+          <div class="event-info">
+           <div class="event-title">
+            Afterwork
+           </div>
+           <div class="event-time">
+            Kl. 16:00 - 19:00
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <!-- Repeat for each event -->
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer class="footer">
+   <div class="container">
+    <div>
+     <img alt="USN Start logo placeholder" class="mb-3" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-sSsOulEoQY3dXtF2RiaK66Ja/user-XZ7Av8ZH1bvGvI0GdH7WwbAs/img-qCCpHWFzSDixHuqXo2Aheatz.png?st=2024-02-06T20%3A57%3A56Z&amp;se=2024-02-06T22%3A57%3A56Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-02-06T03%3A07%3A20Z&amp;ske=2024-02-07T03%3A07%3A20Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=nRlbftTsDUjwoHIiN0N6Q2VzzMv3QoEWAVybabwD8kI%3D" width="200"/>
+    </div>
+    <p>
+     Bli med på spennende arrangementer og workshops hos USNStart!
+    </p>
+    <div class="contact-info">
+     <p>
+      +47 815 49 300
+     </p>
+     <p>
+      <a href="mailto:usnstart@usn.no">
+       usnstart@usn.no
+      </a>
+     </p>
+     <p>
+      Gullbringvegen 36, 3800 Bø
+     </p>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
