@@ -1,0 +1,130 @@
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USNStart Coworking Space</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F9FAFB; /* bg-gray-50 */
+        }
+        .header-nav-link {
+            color: #6B7280; /* Gray-500 */
+        }
+        .header-nav-link:hover {
+            color: #111827; /* Gray-900 */
+        }
+        .login-link {
+            color: #1F2937; /* Gray-800 */
+        }
+        .login-link:hover {
+            color: #4B5563; /* Gray-600 */
+        }
+        .footer-text {
+            color: #6B7280; /* Gray-500 */
+        }
+        .footer-link {
+            color: #1F2937; /* Gray-800 */
+        }
+        .footer-link:hover {
+            color: #4B5563; /* Gray-600 */
+        }
+        .main-heading {
+            color: #1F2937; /* Gray-800 */
+        }
+        .main-text {
+            color: #4B5563; /* Gray-600 */
+        }
+        .explore-button {
+            background-color: #E5E7EB; /* Gray-200 */
+            color: #1F2937; /* Gray-800 */
+        }
+        .explore-button:hover {
+            background-color: #D1D5DB; /* Gray-300 */
+        }
+        .border-color {
+            border-color: #E5E7EB; /* Gray-200 */
+        }
+        .bg-section {
+            background-color: #FFFFFF; /* White */
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script type="text/babel">
+        function App() {
+            return (
+                <div>
+                    <header className="bg-section py-4">
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <nav className="flex justify-between">
+                                <div className="flex items-center space-x-10">
+                                    <img src="https://placehold.co/150x50" alt="USNStart logo" className="h-8" />
+                                    <a href="#" className="header-nav-link text-sm font-medium">TJENESTER OG FASILITETER</a>
+                                    <a href="#" className="header-nav-link text-sm font-medium">ARRANGEMENTER OG WORKSHOPS</a>
+                                    <a href="#" className="header-nav-link text-sm font-medium">OM OSS</a>
+                                    <a href="#" className="header-nav-link text-sm font-medium">BOOKING</a>
+                                </div>
+                                <div className="flex items-center space-x-6">
+                                    <a href="#" className="header-nav-link text-sm font-medium">BLI MEDLEM</a>
+                                    <a href="#" className="login-link text-sm font-medium">LOGG INN</a>
+                                </div>
+                            </nav>
+                        </div>
+                    </header>
+
+                    <main className="mt-10">
+                        <div className="bg-section shadow overflow-hidden sm:rounded-lg">
+                            <div className="px-4 py-5 sm:px-6">
+                                <h2 className="text-3xl leading-6 font-bold main-heading">Historien bak USNStart Coworking Space</h2>
+                            </div>
+                            <div className="border-t border-color">
+                                <dl>
+                                    <div className="bg-section px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                                        <dt className="text-sm font-medium text-gray-500">
+                                            <img src="https://placehold.co/940x768" alt="Front view of USNStart Coworking Space building with glass facade and green bushes in front." className="w-full h-auto rounded-lg" />
+                                        </dt>
+                                        <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                                            <p className="mb-4 main-text">
+                                                USNStart Coworking Space ble opprettet med visjonen om å skape en dynamisk og inspirerende arbeidsplass for studenter og entreprenører. Det hele begynte med ideen om å utnytte de ubrukte lokalene på USN Bø Campus og omdanne dem til et felles arbeidsrom som kunne fremme samarbeid og innovasjon. Målet var å skape et miljø der studenter og profesjonelle kunne jobbe sammen, dele kunnskap og ressurser, og bygge et nettverk av likesinnede entreprenører og selskaper.
+                                            </p>
+                                            <p className="mb-4 main-text">
+                                                Gjennom et grundig planleggings- og designprosess ble USNStart Coworking Space utviklet med tanke på å tilby et bredt spekter av fasiliteter og tjenester som passer til ulike arbeidsstiler og behov. Fra åpne arbeidsområder til private kontorer, møterom, fellesrområder og avslapningsområder, ble det sikret at coworking-plassen kunne imøtekomme ulike arbeidsbehov og skape et stimulerende og produktivt miljø. Med en tydelig visjon om å støtte og fremme entreprenørskap og innovasjon, ønsker USNStart Coworking Space å være et knutepunkt for kreativitet, samarbeid og vekst i regionen.
+                                            </p>
+                                            <p className="mb-4 main-text">
+                                                Liker du det du leser?
+                                            </p>
+                                            <button className="explore-button px-6 py-2 rounded-lg font-bold hover:bg-gray-300">Utforsk våre medlemsskap</button>
+                                        </dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                    </main>
+
+                    <footer className="bg-section py-4 mt-10">
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <div className="flex justify-between items-center">
+                                <img src="https://placehold.co/150x50" alt="USNStart logo" className="h-8" />
+                                <p className="footer-text text-sm">
+                                    Kontakt oss: <a href="tel:+4712345678" className="footer-link">+47 815 49 300</a> | <a href="mailto:usnstart@usn.no" className="footer-link">usnstart@usn.no</a> | Gullbringvegen 36, 3800 Bø
+                                </p>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('app'));
+    </script>
+</body>
+</html>
