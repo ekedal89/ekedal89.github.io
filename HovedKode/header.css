@@ -45,13 +45,11 @@ body{
   padding: 20px 10px;  
   display: flex;
   align-items: center;
-   
 }
 
 .header-right a {
     padding: 12px;
 }
-
 
 .footer{
   background-color: #4f4f4f;
