@@ -43,8 +43,8 @@ body{
 .header-right {
   float: right;
   padding: 20px 10px;  
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
    
 }
 
