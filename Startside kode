@@ -1,0 +1,72 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNStart CoworkingSpace</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div id="app"></div>
+<script type="text/babel">
+    function App() {
+        return (
+            <div className="bg-gray-100">
+                <header className="bg-black text-white p-4 flex justify-between items-center">
+                    <div className="font-bold text-xl">UNStart CoworkingSpace</div>
+                    <nav className="hidden md:block">
+                        <ul className="flex space-x-4">
+                            <li>TJENESTER OG FASILITETER</li>
+                            <li className="bg-white text-black py-2 px-4">ARRANGEMENTER OG WORKSHOPS</li>
+                            <li>OM OSS</li>
+                            <li>BOOKING</li>
+                            <li>BLI MEDLEM</li>
+                            <li className="text-blue-500">LOGG INN</li>
+                        </ul>
+                    </nav>
+                </header>
+                <main className="flex flex-col md:flex-row">
+                    <section className="md:w-1/2 p-10">
+                        <h1 className="text-5xl font-bold mb-6">Ditt arbeidssted, vårt felleskap!</h1>
+                        <button className="bg-black text-white py-2 px-4">BLI MEDLEM</button>
+                        <img src="https://placehold.co/600x400" alt="A coworking space with a person working on a laptop" className="mt-6"/>
+                    </section>
+                    <section className="md:w-1/2 p-10 bg-white">
+                        <button className="bg-black text-white py-2 px-4 mb-6">Arrangementer og workshops</button>
+                        <p className="mb-6">Få mest mulig ut av arbeidsdagen ved å delta på våre spennende arrangementer og workshops på coworking-plassen vår, der du kan utveksle ideer og bygge nettverk med andre idéskapelige fagfolk.</p>
+                        <blockquote className="mb-4">
+                            <p className="italic">"UNStart er det perfekte stedet for å jobbe og samarbeide med andre kreative mennesker. Atmosfæren er inspirerende og fasilitetene er topp moderne."</p>
+                            <p className="font-bold">Ola Moe, student.</p>
+                        </blockquote>
+                        <blockquote>
+                            <p className="italic">"Jeg elsker å jobbe på UNStart! Det er alltid en plass å sitte, møterommene er flotte og det er alltid god kaffe tilgjengelig."</p>
+                            <p className="font-bold">Katrine Persson, entreprenør.</p>
+                        </blockquote>
+                    </section>
+                </main>
+                <footer className="bg-black text-white p-4">
+                    <div className="flex justify-between items-center">
+                        <div className="font-bold text-xl">UNStart CoworkingSpace</div>
+                        <div>
+                            <p>Kontakt oss: +47 815 49 300</p>
+                            <p>unstart@usn.no Gullbringvegen 36, 3800 Bø</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        );
+    }
+
+    ReactDOM.render(<App />, document.getElementById('app'));
+</script>
+</body>
+</html>
