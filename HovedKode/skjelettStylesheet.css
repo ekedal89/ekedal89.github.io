@@ -1,0 +1,122 @@
+body{
+    background-color: #d9d9d9;
+    margin: 0;
+  }
+  
+  .header {
+    overflow: hidden;
+    background-color: #4f4f4f;
+  }
+  
+  .header a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 36px;
+    line-height: 25px;
+    border-radius: 10px; 
+      }
+  
+  .header a.logo {   
+      max-width: 15%;
+      max-height: 15%; 
+      float: left;
+      margin-left: 1%;
+  }
+  
+  .img{
+      max-width: 100%;
+  }
+  
+  .header a:hover {
+    background-color: #d9d9d9;
+    color: black;
+  }
+  
+  .loggInn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px; /* Juster padding etter ønske for å gjøre den hvite boksen mindre */
+    border: none; /* Fjern border */
+    cursor: pointer;
+    font-size: 18px; /* Endre størrelsen på teksten etter behov */
+    border-radius: 5px; /* Legg til runde kanter */
+}
+  
+  
+  .header-right {
+    float: right;
+    padding: 20px 10px;  
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right a {
+      padding: 12px;
+  }
+  
+  .footer{
+    background-color: #4f4f4f;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    height: 15%;
+    overflow: hidden;
+  }
+
+  
+  .footimg {
+    height: 100%;
+    position: absolute; /* Legg til position: absolute; */
+    bottom: 0; /* Plasser bildet nederst */
+    right: 0; /* Plasser bildet til høyre */
+}
+
+  .info {
+    display: block; /* Convert <a> to block element */
+    color: white; /* Set text color */
+    padding: 1%;
+  } 
+  
+  .footer {
+    background-color: #4f4f4f;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center; /* Align content in the center */
+  }
+    
+  
+  .dropbtn {
+    background-color: #4f4f4f; /* Bakgrunnsfarge */
+    color: white; /* Tekstfarge */
+    padding: 16px;
+    font-size: 24px;
+    border: none;
+}
+  
+  .dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 75%;
+    text-align: left;
+  }
+  
+  .dropdown:hover .dropdown-content {
+  display: block;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
