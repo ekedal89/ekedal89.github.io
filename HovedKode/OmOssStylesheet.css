@@ -1,9 +1,9 @@
 
-  .TittelOmOss {
+.TittelOmOss {
     font-family: "Calibri", sans-serif;
-  }
+}
 
-  .bilde-container {
+.bilde-container {
     width: 100vw; /* Setter bredden til 100% av viewport-bredden */
     height: 30vh; /* Setter høyden til 30% av viewport-høyden */
     overflow: hidden; /* Sørger for at bildet innhold ikke overskrider sin container */
