@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="OmOssStylesheet.css" type="text/css";>
+    <link rel="stylesheet" href="skjelettStylesheet.css" type="text/css";>
+    <link rel="stylesheet" href="forsideStylesheet.css" type="text/css";>
+    <title>Om oss</title>
+</head>
+<body>
+    <div class="header">
+          <a href="#default" class="logo"> 
+            <img src="USNSTART_HVIT.png" class="img"> 
+          </a>
+
+        <div class="header-right">
+
+          <a href="#booking">Booking</a>
+
+          <a href="#medlemskap">Våre medlemskap</a>
+         
+          <a href="#kontaktOss">Kontakt oss</a>
+         
+          <button class="loggInn">Logg inn</button>
+
+          
+      <div class="dropdown">
+        <button class="dropbtn">≡</button>
+          <div class="dropdown-content">
+            <a href="#">Mine sider</a>
+            <a href="#">Medlemsregistrering</a>
+            <a href="#">Arrangementer og workshops</a>
+            <a href="#">Fasiliteter og tjenester</a>
+            <a href="#">Om oss</a>
+          </div>
+      </div>
+              
+        </div>
+
+    </div>
+
+
+   
+    <div> <div class="slagord">   
+        <h1>Ditt arbeidssted, vårt felleskap!</h1> </div>   
+        <button class="knappMedlem">UTFORSK MEDLEMSKAP</button>
+        </div>
+        <div class="arrangementer-section">
+          <div class="arrangementerTekst">
+            <h1>Arrangementer og workshops</h1>
+          </div>
+           <div class="hvittLag">
+          <script>
+            window.onload = function () {
+                var hvittLag = document.getElementById("hvittLag");
+                var headerHeight = document.querySelector(".header").offsetHeight;
+                
+                window.onscroll = function () {
+                    var scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
+        
+                    // Juster høyden på det hvite laget basert på rulleposisjonen
+                    hvittLag.style.height = Math.max(0, 100 - scrollPos * 0.1) + "vh";
+                    
+                    // Juster topposisjonen til det hvite laget for å unngå å dekke headeren
+                    hvittLag.style.top = Math.max(0, headerHeight - scrollPos) + "px";
+                };
+            };
+        </script>
+          </div>
+
+          <div class="innholdArrangementer">
+            <h3>Få mest mulig ut av arbeidsdagen ved å delta på våre spennende arrangementer og workshops på coworking-plassen vår, der du kan utveksle ideer og bygge nettverk med andre lidenskapelige fagfolk.</h3>
+          </div>
+          <div class="anmeldelser">
+            <h3> "USNStart er det perfekte stedet å jobbe og samarbeide med andre kreative mennesker.
+              Atmosfæren er inspirerende og fasilitetene er topp moderne" <br>              Ola Moe - student.
+              <br> <br>
+              "Jeg elsker å jobbe på USNStart! Det er alltid en plass å sitte, møterommene er flotte og det er alltid god kaffe tilgjengelig." <br>
+              Katrine Persson - entrepenør.
+            </h3>
+          </div>
+          <div>
+            <img src="manncoworking.jpg" alt="Mann coworking" class="coworkingman">
+          </div>
+        </div>
+
+
+  
+
+
+
+    <footer>
+        <div class="footer">
+           <a class="info">Kontakt oss<br><br>+47 815 49 300   usnstart@usn.no<br><br>
+              Gullbringvegen 36   3800 Bø</a>
+          <img class="footimg" src="USNSTART_HVIT.png" alt="">
+        </div>
+      </footer>
+  </body>
+  </html>
