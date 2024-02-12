@@ -11,7 +11,9 @@ body{
 .header a {
   color: black;
   text-align: center;
-  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif; 
+  font-weight: 400; 
+  font-style: normal; 
   font-size: 36px;
   line-height: 25px;
   border-radius: 10px; 
