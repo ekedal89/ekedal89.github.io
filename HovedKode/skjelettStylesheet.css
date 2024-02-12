@@ -107,6 +107,7 @@ body{
     padding: 10px;
     font-size: 30px;
     border: none;
+    cursor: pointer;
 }
   
   .dropdown {
