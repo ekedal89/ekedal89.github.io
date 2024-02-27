@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="skjelettStylesheet.css" type="text/css">
+        <link rel="stylesheet" href="BookingStylesheet.css" type="text/css">
+        <title>Booking</title>
+    </head>
+    <body>
+        <div class="header">
+            <a href="Forside.html" class="logo"> 
+                <img src="USNSTART_HVIT.png" class="img"> 
+            </a>
+
+            <div class="header-right">
+
+               <a href="#booking">Booking</a>
+
+               <a href="#medlemskap">Våre medlemskap</a>
+
+               <a href="#kontaktOss">Kontakt oss</a>
+
+               <button class="loggInn">Logg inn</button>
+
+
+              <div class="dropdown">
+                 <button class="dropbtn">≡</button>
+                 <div class="dropdown-content">
+                     <a href="#">Mine sider</a>
+                     <a href="#">Medlemsregistrering</a>
+                     <a href="#">Arrangementer og workshops</a>
+                     <a href="#">Fasiliteter og tjenester</a>
+                     <a href="OmOss.html">Om oss</a>
+                 </div>
+              </div>
+                
+            </div>
+        </div>
+        <div id="wrapper">
+        <main>
+            <!-- De to grå boksene  -->
+            <div id="varsler">
+                <a class="varselInfo" id="i1" href="Booking.html">Les mer av våre tjenester og fasiliteter her.</a>
+                <a class="varselInfo" id="i2">
+                    Trenger du hjelp med reservasjon?
+                    <br>
+                    Ring: 815 493 00
+                </a>
+            </div>
+
+            <!-- Prosess menyen, sier hvor langt man er i booking prosessen -->
+            <div id="prosessMeny">
+                <button id="bookingBtn">Booking</button>
+                <a class="pil"> > </a>
+                <button id="velgRomBtn">Velg Rom</button>
+                <a class="pil"> > </a>
+                <button id="resultatBtn" href="Booking.html">Resultat</button>
+            </div>
+
+            <!-- Aktiviteten man holder på med (valg av tid/dato og hvilke rom man booker osv.) -->
+            <div id="aktivitet">
+                <div id="gridContainer">
+                    <div class="top">Velg romtype</div>
+                    <div class="top">Dato</div>
+                    <div class="top">Fra kl.</div>
+                    <div class="top">Til kl.</div>
+                    <div class="top">Antall personer</div>
+                    <div class="top"></div> <!-- skal være tom -->
+                    
+                    <div class="style-select">
+                        <select id="romType" required>
+                            <option value="">Velg romtype</option>
+                        </select>
+                    </div>
+                    
+                    <input type="date" id="inpDato" required>
+                    
+                    <input type="time" id="fraKl" required>
+                    
+                    <input type="time" id="tilKl" required>
+                    
+                    <input type="number" id="antPers" required>
+                        
+                    <button id="nesteBtn">Neste</button>
+                </div>
+            </div>
+        </main>
+        </div>
+
+        <footer>
+          <div class="footer">
+             <a class="info">Kontakt oss<br><br>+47 815 49 300   usnstart@usn.no<br><br>
+                Gullbringvegen 36   3800 Bø</a>
+            <img class="footimg" src="USNSTART_HVIT.png" alt="">
+          </div>
+        </footer>
+    </body>
+    <script></script>
+</html
