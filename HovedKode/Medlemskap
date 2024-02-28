@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="OmOssStylesheet.css" type="text/css">
+  <!-- <link rel="stylesheet" href="OmOssStylesheet.css" type="text/css"> -->
     <link rel="stylesheet" href="skjelettStylesheet.css" type="text/css">
-    <link rel="stylesheet" href="forsideStylesheet.css" type="text/css">
+  <!--  <link rel="stylesheet" href="forsideStylesheet.css" type="text/css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk:MORF@4&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <title>Forside</title>
+    <title>Medlemsskap</title>
 </head>
 
 
@@ -21,7 +21,7 @@
 
   <div class="header-right">
 
-    <a href="">Booking</a>
+    <a href="Booking.html">Booking</a>
 
     <a href="">Våre medlemskap</a>
 
@@ -40,9 +40,9 @@
     <div class="dropdown-content">
       <a href="#">Mine sider</a>
       <a href="#">Medlemsregistrering</a>
-      <a href="#">Arrangementer og workshops</a>
+      <a href="i.arragement.html">Arrangementer og workshops</a>
       <a href="#">Fasiliteter og tjenester</a>
-      <a href="">Om oss</a>
+      <a href="OmOss.html">Om oss</a>
     </div>
 </div>
 
@@ -57,24 +57,12 @@
 
    
     <div>  
-      <img src="slagord.png" alt="slagord" class="slagord">
-        </div>   
-        <button class="knappMedlem">UTFORSK MEDLEMSKAP</button>
+        <button class="knappMedlem">VELG MEDLEMSKAP</button>
         </div>
 
-           <div class="hvittLag">
-              <div class="arrangementerTekst">
-                <h1>Arrangementer og workshops</h1>
-              </div>
-            <div class="innholdArrangementer">
-              <h3>Få mest mulig ut av arbeidsdagen ved å delta på våre spennende arrangementer og workshops på coworking-plassen vår, der du kan utveksle ideer og bygge nettverk med andre lidenskapelige fagfolk.</h3>
-            </div>
-            <div class="anmeldelser">
-              <h3> "USNStart er det perfekte stedet å jobbe og samarbeide med andre kreative mennesker.
-                Atmosfæren er inspirerende og fasilitetene er topp moderne" <br>              Ola Moe - student.
-                <br> <br>
-                "Jeg elsker å jobbe på USNStart! Det er alltid en plass å sitte, møterommene er flotte og det er alltid god kaffe tilgjengelig." <br>
-                Katrine Persson - entrepenør.
+            <div class="DAY PASS">
+              <h3> "DAY PASS <br> 
+                Perfekt for de som trenger en fleksibel arbeidsplass en dag. Med day pass får du tilgang til hele coworking-området for kun 699 kr per dag."
               </h3>
             </div>
           </div>
@@ -87,7 +75,6 @@
 
 
   
-
 
     <footer>
         <div class="footer">
