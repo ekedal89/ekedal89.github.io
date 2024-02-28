@@ -1,0 +1,54 @@
+.velgMedlemskap {
+    position: fixed;
+    top: 28%; /* Justert avhengig av slagordets høyde */
+    left: 2%;
+    background-color: #ffffff;
+    color: black;
+    padding: 10px 20px;
+    font-family: "Bebas Neue", sans-serif; 
+    font-weight: 400; 
+    font-style: normal;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+    .medlemskapOverskrift {
+    position: fixed;
+    top: 10vh; /* Justert avhengig av slagordets høyde */
+    left: 2%;
+    color: black;
+    padding: 10px 20px;
+    font-family: "Bebas Neue", sans-serif; 
+    font-weight: 400; 
+    font-style: normal;
+    font-size: 25px;
+    }
+
+    .medlemskapsInfotekst {
+        position: fixed;
+        top: 45%;
+        left: 2%;
+        color: black;
+        font-family: "Open Sans", sans-serif;
+        font-style: italic;
+        font-size: 15px;
+        z-index: 4; /* Plassert over det hvite laget (z-index: 3) */
+    }
+    
+    .bildeOgTekstContainer {
+        display: flex;
+        align-items: center;
+    }
+    
+    .medlemskapsBilde {
+        width: 100px; /* Juster størrelsen etter behov */
+        height: auto; /* Automatisk justering av høyden for å opprettholde proporsjoner */
+        margin-right: 20px; /* Avstand mellom bildet og teksten */
+    }
+    
+    .tekst {
+        max-width: 400px; /* Maks bredde for teksten */
+    }
