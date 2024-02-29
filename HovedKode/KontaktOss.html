@@ -52,35 +52,39 @@
 
 <!------------MAIN---------->
 
-<div class="OverskriftKontakt">
-  <h1>Send oss en epost</h1>
-</div>
+<div class="page-wrapper">
+  <div class="containerKontakt">
+    <div class="OverskriftKontakt">
+      <h1>Send oss en epost</h1>
+    </div>
 
-<div class="KontaktTekst">
-  <p>Vi svarer normalt innen 24 timer.<br> 
-    Har du behov for raskere hjelp kan du kontakte oss på telefon.</p>
-</div>
+    <div class="KontaktTekst">
+      <p>Vi svarer normalt innen 24 timer.<br> 
+        Har du behov for raskere hjelp kan du kontakte oss på telefon.</p>
+    </div>
 
-  <div class="telefonboks">
-    <p>+ 47 815 49 300</p>
+    <div class="telefonboks">
+      <p>+ 47 815 49 300</p>
+    </div>
+
+    <div class="kontaktskjema">
+      <form id="contactForm" method="post" onsubmit="showConfirmation()">
+
+        <label for="fname">Navn/firma</label>
+        <input type="text" id="fname" name="name" placeholder="Navnet ditt...">
+
+        <label for="lname">Epost-adresse</label>
+        <input type="text" id="lname" name="email" placeholder="Epost-adressen din...">
+
+        <label for="subject">Melding</label>
+        <textarea id="subject" name="subject" placeholder="Skriv meldingen din..." style="height:200px"></textarea>
+
+        <input type="submit" value="Send inn skjema">
+
+      </form>
+    </div>
   </div>
-
-  <div class="kontaktskjema">
-    <form id="contactForm" method="post" onsubmit="showConfirmation()">
-  
-      <label for="fname">Navn/firma</label>
-      <input type="text" id="fname" name="name" placeholder="Navnet ditt...">
-  
-      <label for="lname">Epost-adresse</label>
-      <input type="text" id="lname" name="email" placeholder="Epost-adressen din...">
-  
-      <label for="subject">Melding</label>
-      <textarea id="subject" name="subject" placeholder="Skriv meldingen din..." style="height:200px"></textarea>
-  
-      <input type="submit" value="Send inn skjema">
-  
-    </form>
-  </div>
+</div>
 
   <script>
     function showConfirmation() {

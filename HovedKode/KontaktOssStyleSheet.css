@@ -1,3 +1,4 @@
+
 .OverskriftKontakt {
     font-family: "Bebas Neue", sans-serif;  
     font-weight: 400; 
@@ -9,6 +10,7 @@
     padding: 1%;
     margin-bottom: 0;
     margin-top: -2%;
+    
 }
 
 .KontaktTekst {
@@ -18,6 +20,7 @@
     line-height: 1.3;
     color: black;
     margin-top: -3%;
+    text-align: center;
 }
 
 .telefonboks {
@@ -25,7 +28,7 @@
     color: white;
     font-size: 120%;
     padding: 0.2%;
-    width: 10%;
+    width: 20%;
     height: auto; /* Endre høyden til en passende størrelse i piksler */
     box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
     font-family: "Bebas Neue", sans-serif;
@@ -84,4 +87,17 @@ input[type=text], select, textarea {
     font-size: 15px; 
     line-height: 1.3;
     color: black;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.containerKontakt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
