@@ -4,7 +4,7 @@ main{
 
 #varsler{
     display: flex;
-    margin-top: 9%;
+    margin-top: 6%;
     justify-content: center;
     flex-direction: row;
     gap: 5%;
@@ -13,10 +13,11 @@ main{
 .varselInfo{
     background-color: #4f4f4f;
     color: white;
-    font-size: 150%;
+    font-size: 180%;
     padding: 0.8%;
     width: 100%;
     box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
+    font-family: "Bebas Neue", sans-serif; 
 }
 
 #i1{
@@ -38,6 +39,7 @@ main{
     padding-top: 3%;
     border-bottom: 2px solid grey;
     width: 60%;
+    font-family: "Bebas Neue", sans-serif; 
 }
 
 #prosessMeny *{
@@ -60,6 +62,13 @@ main{
     align-items: center;
 }
 
+#wrapper2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #bookingBtn{
     background-color: #d00000;
     border: none;
@@ -68,10 +77,11 @@ main{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 130%;
+    font-size: 150%;
     margin: 4px 2px;
     cursor: pointer;
-    box-shadow: 10px 10px 30px rgba(0,0,0,0.2)
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
+    font-family: "Bebas Neue", sans-serif; 
 }
 
 #velgRomBtn{
@@ -94,13 +104,35 @@ main{
 
 #gridContainer{
     display: grid;
-    grid-template-columns: repeat(6, 15%);
-    column-gap: 1%;
-    grid-row-gap: 3%;
+    grid-template-columns: repeat(2, 100%);
+    grid-row-gap: 10%;
+    grid-column-gap: 3%;
+    justify-content: center;
+    margin-right: 5.5vw;
+    
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas: "sidebar content";
+    margin-bottom: 5vw;
 }
 
-.top{
+.txt{
     font-weight: bold;
+}
+
+.txtT{
+    font-weight: bold;
+    width: 40%;
+    font-size: 120%;
+}
+
+#headline, #headline2{
+    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif; 
+    font-size: 130%;
+}
+
+#headline2{
+    font-size: 180%;
 }
 
 #gridContainer select,input{
@@ -120,7 +152,11 @@ main{
     }
 }
 
-#nesteBtn{
+#gridContainer *{
+    place-self: center;
+}
+
+#nesteBtn , #tilbakeBtn, #ferdigBtn{
     background-color: #d00000;
     border: 1px solid black;
     color: white;
@@ -136,3 +172,52 @@ main{
        box-shadow: 8px 8px 30px rgba(0,0,0,0.3); 
     }
 }
+
+#tilbakeBtn, #ferdigBtn{
+    border-radius: 3px;
+    padding: 9px 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+#ferdigBtn{
+    background-color: green;
+}
+
+#btnContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    width: 15%;
+    margin-top: 5vh;
+}
+
+#imgKart{
+    margin-right: auto;
+}
+
+#valgtPlass{
+    border: 1px solid blue;
+    width: 17%;
+    margin-right: 8%;
+    justify-content: center;
+}
+
+.luft{
+    padding-top: 26.2vh;
+}
+
+.luft2{
+    padding-top: 3.30vh;
+}
+
+.footer{
+    margin-top: 3vh;
+}
+
+table, th, td {
+  border:1px solid black;
+}
+
+
+
