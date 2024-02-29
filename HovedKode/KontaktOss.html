@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="skjelettStylesheet_b.css" type="text/css";>
+    <link rel="stylesheet" href="KontaktOssStyleSheet.css" type="text/css";>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk:MORF@4&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -51,7 +52,41 @@
 
 <!------------MAIN---------->
 
-<h1>DETTE ER EN TEST</h1>
+<div class="OverskriftKontakt">
+  <h1>Send oss en epost</h1>
+</div>
+
+<div class="KontaktTekst">
+  <p>Vi svarer normalt innen 24 timer.<br> 
+    Har du behov for raskere hjelp kan du kontakte oss på telefon.</p>
+</div>
+
+  <div class="telefonboks">
+    <p>+ 47 815 49 300</p>
+  </div>
+
+  <div class="kontaktskjema">
+    <form id="contactForm" method="post" onsubmit="showConfirmation()">
+  
+      <label for="fname">Navn</label>
+      <input type="text" id="fname" name="name" placeholder="Navnet ditt...">
+  
+      <label for="lname">Epost-adresse</label>
+      <input type="text" id="lname" name="email" placeholder="Epost-adressen din...">
+  
+      <label for="subject">Melding</label>
+      <textarea id="subject" name="subject" placeholder="Skriv meldingen din..." style="height:200px"></textarea>
+  
+      <input type="submit" value="Send inn skjema">
+  
+    </form>
+  </div>
+
+  <script>
+    function showConfirmation() {
+        alert("Skjemaet ditt er innsendt");
+    }
+</script>
 
 
 
