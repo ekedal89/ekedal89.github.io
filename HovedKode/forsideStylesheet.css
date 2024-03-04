@@ -85,3 +85,23 @@
     z-index: 4; /* Plassert over det hvite laget (z-index: 3) */
   }
 
+  .info-2 a {
+    text-align: center;
+    width: 30%; /* Adjust the width as needed */
+    color: white;
+     /* Fjerner understrek */
+  }
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif
+}
+
+.footimg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
