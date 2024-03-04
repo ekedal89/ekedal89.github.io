@@ -14,7 +14,7 @@
 
 .medlemskapOverskrift {
     position: relative;
-    top: 10vh;
+    top: 2vh;
     left: 2%;
     color: black;
     padding: 10px 20px;
@@ -32,7 +32,6 @@
 
     .medlemskapsInfotekst {
         position: relative;
-        top: 5vh; /* Justert avhengig av overskriftens høyde */
         left: 2%;
         color: black;
         font-family: "Bebas Neue", sans-serif; 
