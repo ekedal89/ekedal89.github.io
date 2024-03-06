@@ -38,6 +38,7 @@
 .coworkingman {
     width: 100%;
     height: auto;
+    z-index: 1;
 }
 .knappMedlem {
     position: fixed;
@@ -56,11 +57,20 @@
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 .header {
-    z-index: 3; /* Plasser header foran det hvite laget */
+    z-index: 1000; /* Plasser header foran det hvite laget */
+    position: sticky;
 }
 
 .footer {
-    z-index: 888; /* Plasser footer foran det hvite laget */
+    background-color: #4f4f4f;
+    position: fixed;
+    justify-content: space-between;
+    height: 15%;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    padding: 1%;
+    margin: 0 auto;
 }
 .hvittLag {
     position: fixed; /* Gjør elementet "sticky" */
@@ -69,8 +79,8 @@
     bottom: 0;
     width: 50%; /* Juster bredden etter behov */
     background-color: rgba(255, 255, 255, 0.8); /* 0.8 gir 80% gjennomsiktighet */
-    z-index: 2; /* Plasser det under header og footer, men over bildet og tekst */
-    flex-grow: 1; 
+    z-index: 1; /* Plasser det under header og footer, men over bildet og tekst */
+
   }
 
 
@@ -97,8 +107,9 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    font-family: "Bebas Neue", sans-serif
-}
+    font-family: "Bebas Neue", sans-serif;
+    z-index: 1000;
+ }
 
 .footimg{
     position: absolute;
