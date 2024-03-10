@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="i.skeleton.css" type="text/css";>
+    <link rel="stylesheet" href="i.skeleton.css" type="text/css">
     <link rel="stylesheet" href="i.arragement.css">
     <link rel="stylesheet" href="i.filter-cont.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk:MORF@4&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -13,17 +13,17 @@
 
 <body>
     <div class="header">
-          <a href="Forside.html" class="logo"> 
+          <a href="" class="logo"> 
             <img src="USNSTART_HVIT.png" class="img"> 
           </a>
 
         <div class="header-right">
 
-          <a href="Booking.html">Booking</a>
+          <a href="">Booking</a>
 
-          <a href="Medlemskap.html">Våre medlemskap</a>
+          <a href="">Våre medlemskap</a>
          
-          <a href="KontaktOss.html">Kontakt oss</a>
+          <a href="">Kontakt oss</a>
          
           <button class="loggInn">Logg inn</button>
 
@@ -38,9 +38,9 @@
           <div class="dropdown-content">
             <a href="#">Mine sider</a>
             <a href="#">Medlemsregistrering</a>
-            <a href="i.arragement.html">Arrangementer og workshops</a>
+            <a href="#">Arrangementer og workshops</a>
             <a href="#">Fasiliteter og tjenester</a>
-            <a href="OmOss.html">Om oss</a>
+            <a href="">Om oss</a>
           </div>
       </div>
               
@@ -51,7 +51,10 @@
 <!--          MAIN          -->
 
   <div class="img-container">
-    <img src="https://placehold.co/1900x600" alt="#">
+    <img src="2150951407.jpg" alt="#">
+    <div class="imgtxt-2">
+      Workshops
+    </div>
     <div class="imgtxt">
       Bli med på spennende Arrangementer og workshops hos Usn start
     </div>
@@ -59,22 +62,22 @@
 
 
      <!-- placeholder filtrering syst-->
-     <div class="filter-container">
+  <div class="filter-container">
     
-      <div id="row-1">
-          <form class="form">
-              <input type="text" placeholder="Search.." name="search">
-              <button type="submit">Search</button>
-            </form>
-      </div>
+  <div id="row-1">
+      <form class="form">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit">Search</button>
+        </form>
+  </div>
 
-      <div id="row-2">
-          Filtrer etter:
-          <button class="fil-butt active" onclick="filterSelection('all')">Vis Alle</button>
-          <button class="fil-butt" onclick="filterSelection('Arrangør')">Arrangør</button>
-          <button class="fil-butt" onclick="filterSelection('usnstart')">Sted</button>
-          <button class="fil-butt" onclick="filterSelection('date')">Dato</button>
-      </div>
+    <div id="row-2">
+        Filtrer etter:
+        <button class="fil-butt active" onclick="filterSelection('all')">Vis Alle</button>
+        <button class="fil-butt" onclick="filterSelection('Arrangør')">Arrangør</button>
+        <button class="fil-butt" onclick="filterSelection('usnstart')">Sted</button>
+        <button class="fil-butt" onclick="filterSelection('date')">Dato</button>
+    </div>
 
       <div id="row-3">
           Kommende Arrangementer idag:
@@ -84,39 +87,52 @@
     
   <div class="inner-block">
 
-    <div class="filterDiv Arrangør date">    
+    <div class="filterDiv Arrangør date show">    
         <div class="img-conts"> 
-          <img src="https://placehold.co/200x125" alt="#">
-          <img src="https://placehold.co/185x125" alt="#">
+          <img src="stockis.jpg" alt="#">
+          <img src="webinar-invitations.jpg" alt="#">
         </div>
         <div>
           <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, natus!
+            Bli med på spennende Arrangementer og workshops hos Usn start. Trykk på lenken for å melde opp.
           </p>
         </div>
   </div>
-    <div class="filterDiv usnstart date">
-      <img src="https://placehold.co/385x150" alt="#">
 
-    </div>
-
-    <div class="filterDiv Arrangør">
-      <img src="https://placehold.co/385x150" alt="#">
-    </div>
-
-    <div class="filterDiv usnstart">
+    <div class="filterDiv usnstart date show">
       <div class="img-conts">
-      <img src="https://placehold.co/200x125" alt="#">
-      <img src="https://placehold.co/185x125" alt="#">
+        <img src="overhead-view.jpg" alt="#">
+        <img src="webinar-invitations.jpg" alt="null">
       </div>
       <p class="text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, natus!
+        Bli med på spennende Arrangementer og workshops hos Usn start. Trykk på lenken for å melde opp.      </p>
+
+    </div>
+
+    <div class="filterDiv Arrangør show">
+      <div class="img-conts">
+        <img src="2150951407.jpg" alt="#">
+        <img src="webinar-invitations.jpg" alt="">  
+      </div>
+            <p class="text">
+              Bli med på spennende Arrangementer og workshops hos Usn start. Trykk på lenken for å melde opp.            </p>
+    </div>
+
+    <div class="filterDiv usnstart show">
+      <div class="img-conts">
+      <img src="copro.jpg" alt="#">
+      <img src="webinar-invitations.jpg" alt="#">
+      </div>
+      <p class="text">
+        Bli med på spennende Arrangementer og workshops hos Usn start.
+        Trykk på lenken for å melde opp.
       </p>
     </div>
   </div>   
 
  
-    
+    <div style="height: 100px;">
+    </div>
 
     <footer>
       <div class="footer">
@@ -128,11 +144,13 @@
          <div class="info">
             Kontakt oss
             <br><br>
-            +47 815 49 300   usnstart@usn.no
+            +47 815 49 300   
+            <br><br>
+            usnstart@usn.no
             <br><br>
             Gullbringvegen 36   3800 Bø
-            
-            
+            <br><br>
+             <a href="https://lovdata.no/dokument/NL/lov/2018-06-15-38" target="_blank">Personvernerklæring</a>
          </div>
         <img class="footimg" src="USNSTART_HVIT.png" alt="">
       </div>

@@ -36,12 +36,14 @@ function RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-var btnContainer = document.getElementById("row-2");
-var btns = btnContainer.getElementsByClassName("fil-butt");
+var btns = document.getElementsByClassName("fil-butt");
+
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
+  btns[i].addEventListener("click", function(){
     var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    current[0].classList.remove("active");
+    this.classList.add("active");
   });
 }
+
+
