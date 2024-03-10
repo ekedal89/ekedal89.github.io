@@ -1,3 +1,8 @@
+.ch {
+  mix-blend-mode: darken;
+    width: 21%;
+}
+
 main{
     width: 85%;
 }
@@ -125,6 +130,10 @@ main{
     font-size: 120%;
 }
 
+#txt3{
+    font-size: 130%;
+}
+
 #headline, #headline2{
     font-weight: bold;
     font-family: "Bebas Neue", sans-serif; 
@@ -209,6 +218,10 @@ main{
 
 .luft2{
     padding-top: 3.30vh;
+}
+
+.luft3{
+    padding-top: 2vh;
 }
 
 .footer{
