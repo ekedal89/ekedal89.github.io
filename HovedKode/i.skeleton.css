@@ -1,14 +1,17 @@
 body{
   background-color: #d9d9d9;
   margin: 0;
-  
 }
 
 .header {
   display:inline-block;
   background-color: #2f0b63;
   width: 100%;
+  margin-bottom: -1vh;
+  z-index: 1;
+  position: relative;
 }
+
 .header a {
   color: white;
   text-align: center;
@@ -50,7 +53,6 @@ body{
   border-radius: 5px; /* Legg til runde kanter */
 }
 
-
 .header-right {
   float: right;
   padding: 20px 10px;  
@@ -74,6 +76,7 @@ body{
 .footimg {
   height: 10vh;
 }
+
 /* info 2 er usynlig for spacing*/
 .info {
   display: block; 
@@ -84,8 +87,8 @@ body{
   font-weight: 400; 
   font-style: normal; 
   text-align: center;
-  line-height: 1.5;
-  letter-spacing: 2px;    
+  letter-spacing: 2px;
+  width: 20vw;    
 }
 
 .info a{
@@ -102,8 +105,7 @@ body{
   font-style: normal; 
   text-align: center;
   line-height: 1.;
-  letter-spacing: 2px;
-  
+  letter-spacing: 2px;  
 }
 
 .dropbtn {
