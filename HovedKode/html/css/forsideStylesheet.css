@@ -1,0 +1,100 @@
+
+.slagord {
+    position: fixed;
+    top: 20%;
+    left: 2%; /* Juster etter behov for å plassere til venstre */
+    background-color: rgba(0, 0, 0, 0.534);
+    border: none;
+    width: 47%;
+    margin: 5px 0; /* Justert margin for å påvirke bakgrunnshøyden */
+}
+
+.arrangementerTekst {
+    position: fixed;
+    top: 16.5%;
+    right: 0; /* Juster etter behov for å plassere til høyre */
+    color: black;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;  
+    font-weight: 400; 
+    font-style: normal; 
+    font-size: 20px;
+    z-index: 4;
+    width: 47%; /* Juster etter behov for å unngå overlapp */
+    text-shadow: 1px 1px 2px rgba(112, 112, 112, 0.4);
+    letter-spacing: 2px;
+}
+
+.innholdArrangementer {
+    position: fixed;
+    top: 26%;
+    color: black;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    z-index: 4;
+}
+
+.coworkingman {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.knappMedlem {
+    position: fixed;
+    top: 28%; /* Justert avhengig av slagordets høyde */
+    left: 2%;
+    background-color: #7800f0;
+    color: white;
+    padding: 10px 20px;
+    font-family: "Bebas Neue", sans-serif; 
+    font-weight: 400; 
+    font-style: normal;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+    z-index: 1000; /* Plasser header foran det hvite laget */
+    position: sticky;
+    margin-bottom: -1vh;
+}
+
+.hvittLag {
+    position: fixed; /* Gjør elementet "sticky" */
+    top: 0; /* Avstand fra toppen av siden */
+    right: 0;
+    bottom: 0;
+    width: 50%; /* Juster bredden etter behov */
+    background-color: rgba(255, 255, 255, 0.8); /* 0.8 gir 80% gjennomsiktighet */
+    z-index: 1; /* Plasser det under header og footer, men over bildet og tekst */
+}
+
+
+.anmeldelser {
+    position: fixed;
+    top: 45%;
+    color: black;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    z-index: 4; /* Plassert over det hvite laget (z-index: 3) */
+}
+
+.info-2 a {
+    text-align: center;
+    width: 30%; /* Adjust the width as needed */
+    color: white;
+     /* Fjerner understrek */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}

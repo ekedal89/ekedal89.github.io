@@ -1,0 +1,75 @@
+.filter-container{
+    padding: 0;
+    background-color: #d9d9d9;
+    font-family: "Bebas Neue", sans-serif; 
+}
+
+#row-1{
+    height: 33.33%;
+    width: 100%;
+    margin: 0;
+}
+#row-1 input{
+    width: 33%;
+    line-height: 2;
+    font-size: 18px;
+    height: 100%;
+    margin: 0;
+    border: none;
+}
+
+.form{
+    height: 100%;
+    margin: 0;
+}
+
+#row-1 button{
+    width: 10%;
+    height: 100%;
+    font-size: 18px;
+    margin: 0;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: "Bebas Neue", sans-serif; 
+}
+
+#row-2{
+    height: 33.33%;
+    padding: 1vh 1em;
+}
+
+#row-3{
+    font-size: 24px;
+    height: 33.33%;
+}
+
+.fil-butt {
+    border: none;
+    outline: none;
+    padding: 2vh 2em;
+    margin-right:1vw;
+    margin-left: 1vw;
+    font-size: 18px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    font-family: "Bebas Neue", sans-serif; 
+}
+
+.fil-butt:hover {
+    background-color: #ddd;
+}
+
+.fil-butt.active {
+    background-color: #666;
+    color: white;
+}
+
+.filterDiv{
+    display: none;
+}
+
+.show {
+  display: block;
+}

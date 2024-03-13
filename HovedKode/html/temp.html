@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="skjelettStylesheet.css" type="text/css">
+        <link rel="stylesheet" href="BookingStylesheet.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk:MORF@4&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <title>Booking</title>
+    </head>
+    <body>
+        <div class="header">
+              <a href="" class="logo"> 
+                <img src="USNSTART_HVIT.png" class="img"> 
+              </a>
+
+            <div class="header-right">
+
+              <a href="">Booking</a>
+
+              <a href="">Våre medlemskap</a>
+
+              <a href="">Kontakt oss</a>
+
+              <button class="loggInn">Logg inn</button>
+
+                <br>
+              <div class="dropdown">
+                  <div class="nav">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                  </div>
+
+                  <div class="dropdown-content">
+                    <a href="#">Mine sider</a>
+                    <a href="#">Medlemsregistrering</a>
+                    <a href="#">Arrangementer og workshops</a>
+                    <a href="#">Fasiliteter og tjenester</a>
+                    <a href="">Om oss</a>
+                  </div>
+              </div>
+            </div>
+        </div>
+        
+        <div id="wrapper">
+        <main>
+            <!-- De to grå boksene  -->
+            <div id="varsler">
+                <a class="varselInfo" id="i1" href="Booking.html">Les mer av våre tjenester og fasiliteter her.</a>
+                <a class="varselInfo" id="i2">
+                    Trenger du hjelp med reservasjon?
+                    <br>
+                    Ring: 815 493 00
+                </a>
+            </div>
+
+            <!-- Prosess menyen, sier hvor langt man er i booking prosessen -->
+            <div id="prosessMeny">
+                <button id="bookingBtn">Booking</button>
+                <a class="pil"> > </a>
+                <button id="velgRomBtn">Velg Rom</button>
+                <a class="pil"> > </a>
+                <button id="resultatBtn" href="Booking.html">Resultat</button>
+            </div>
+
+            <!-- Aktiviteten man holder på med (valg av tid/dato og hvilke rom man booker osv.) -->
+            <div id="aktivitet">
+                <div id="wrapper2">
+                    <div id="headline2">Resultat:</div>
+                    <br><br>
+                    <table id="resultatInfo" style="width:30%;">
+                        <tr>
+                            <td class="txtT">Rom Nummer:</td>
+                            <td>${}</td>
+                        </tr>
+                        <tr>
+                            <td class="txtT">Plass Nummer:</td>
+                            <td>${}</td>
+                        </tr>
+                        <tr>
+                            <td class="txtT">Dato:</td>
+                            <td>${}</td>
+                        </tr>
+                        <tr>
+                            <td class="txtT">Fra kl:</td>
+                            <td>${}</td>
+                        </tr>
+                        <tr>
+                            <td class="txtT">Til kl:</td>
+                            <td>${}</td>
+                        </tr>
+                        <tr>
+                            <td class="txtT">Antall Personer:</td>
+                            <td>${}</td>
+                        </tr>
+
+                    </table>
+                    <div id="btnContainer">
+                        <button id="tilbakeBtn" onclick="tilBooking()">Tilbake</button> 
+                        <button id="ferdigBtn">Ferdig</button>
+                    </div>
+                    <div class="luft2"></div>
+                </div>
+            </div>
+        </main>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="info-2">
+                </div>
+                <div class="info">
+                    Kontakt oss
+                    <br><br>
+                    +47 815 49 300
+                    <br><br>
+                    usnstart@usn.no
+                    <br><br>
+                    Gullbringvegen 36   3800 Bø
+                </div>
+                <img class="footimg" src="USNSTART_HVIT.png" alt="">
+             </div>
+        </footer>
+    </body>
+    <script>
+        //Variabler
+        var aktivitet = document.getElementById("aktivitet");
+        var romNr = document.getElementById("romNr");
+        var plassNr = document.getElementById("plassNr");
+        var inpDato = document.getElementById("inpDato");
+        var fraKl = document.getElementById("fraKl");
+        var tilKl = document.getElementById("tilKl");
+        var antPers = document.getElementById("antPers");
+        
+        var arr = [romNr, plassNr, inpDato, fraKl, tilKl, antPers];
+        
+        
+        //Funksjoner
+        function tilResultat(){
+            aktivitet.innerHTML = ``;
+        }
+        
+        
+        function tilBooking(){
+            aktivitet.innerHTML = `<div id="wrapper">
+                    <img id="imgKart" src="kart1.png" alt="kart" usemap="#kart">
+
+                    <map id="kart">
+                        <area target="" alt="1.1" title="1.1" href="" coords="36,25,72,58" shape="rect">
+                        <area target="" alt="1.2" title="1.2" href="" coords="35,64,72,92" shape="rect">
+                        <area target="" alt="1.3" title="1.3" href="" coords="35,97,72,127" shape="rect">
+                        <area target="" alt="1.4" title="1.4" href="" coords="77,25,112,59" shape="rect">
+                        <area target="" alt="1.5" title="1.5" href="" coords="78,64,114,92" shape="rect">
+                        <area target="" alt="1.6" title="1.6" href="" coords="77,98,115,126" shape="rect">
+                        <area target="" alt="1.7" title="1.7" href="" coords="166,27,203,58" shape="rect">
+                        <area target="" alt="1.8" title="1.8" href="" coords="164,62,204,92" shape="rect">
+                        <area target="" alt="1.9" title="1.9" href="" coords="164,98,202,127" shape="rect">
+                        <area target="" alt="1.10" title="1.10" href="" coords="207,28,241,59" shape="rect">
+                        <area target="" alt="1.11" title="1.11" href="" coords="207,63,241,92" shape="rect">
+                        <area target="" alt="1.12" title="1.12" href="" coords="207,98,241,127" shape="rect">
+                        <area target="" alt="2.1" title="2.1" href="" coords="312,27,343,59" shape="rect">
+                        <area target="" alt="2.2" title="2.2" href="" coords="310,63,343,93" shape="rect">
+                        <area target="" alt="2.3" title="2.3" href="" coords="309,97,343,127" shape="rect">
+                        <area target="" alt="2.4" title="2.4" href="" coords="348,28,383,59" shape="rect">
+                        <area target="" alt="2.5" title="2.5" href="" coords="349,64,384,92" shape="rect">
+                        <area target="" alt="2.6" title="2.6" href="" coords="348,97,385,127" shape="rect">
+                        <area target="" alt="2.7" title="2.7" href="" coords="390,27,425,59" shape="rect">
+                        <area target="" alt="2.8" title="2.8" href="" coords="390,64,424,91" shape="rect">
+                        <area target="" alt="2.9" title="2.9" href="" coords="389,97,426,126" shape="rect">
+                        <area target="" alt="2.10" title="2.10" href="" coords="430,27,466,59" shape="rect">
+                        <area target="" alt="2.11" title="2.11" href="" coords="431,64,466,92" shape="rect">
+                        <area target="" alt="2.12" title="2.12" href="" coords="431,97,467,126" shape="rect">
+                        <area target="" alt="3.1" title="3.1" href="" coords="497,50,540,90" shape="rect">
+                        <area target="" alt="3.2" title="3.2" href="" coords="554,51,600,91" shape="rect">
+                        <area target="" alt="3.3" title="3.3" href="" coords="548,128,603,176" shape="rect">
+                    </map>
+                    
+                    <div id="gridContainer">
+                        <div></div>
+                        <div id="headline">Velg Plass</div>
+                        
+                        <div class="txtT">Rom Nummer:</div>
+                        <input id="romNr" placeholder="rom nummer" type="number" value="${arr[0]}">
+                        
+                        <div class="txtT">Sete Nummer:</div>
+                        <input id="plassNr" placeholder="sete nummer" type="number" value="${arr[1]}">
+                        
+
+                        <div class="txtT">Dato:</div>
+                        <input type="date" id="inpDato" value="${arr[2]}" required>
+
+                        <div class="txtT">Fra kl.</div>
+                        <input type="time" id="fraKl" value="${arr[3]}" required>
+
+                        <div class="txtT">Til kl.</div>
+                        <input type="time" id="tilKl" value="${arr[4]}" required>
+
+                        <div class="txtT">Antall personer:</div>
+                        <input type="number" id="antPers" placeholder="antall personer" value="${arr[5]}" required>
+
+                        <div></div>
+                        <button class="nesteBtn" type="submit">Neste</button>
+                    </div>
+                </div>`;
+        }
+    </script>
+</html>
