@@ -27,5 +27,5 @@
        }
 
        function fasilteter(){
-           window.location.href = "index.arragement.html";
+           window.location.href = "Fasiliteter.html";
        }
