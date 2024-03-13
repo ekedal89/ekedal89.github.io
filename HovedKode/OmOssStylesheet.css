@@ -1,8 +1,7 @@
-
 .TittelOmOss {
-    font-family: "Bebas Neue", sans-serif;  
-    font-weight: 400; 
-    font-style: normal; 
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 20px;
     z-index: 4;
     text-shadow: 1px 1px 2px rgba(112, 112, 112, 0.4);
@@ -10,21 +9,27 @@
 }
 
 .bilde-container {
-    width: 100vw; /* Setter bredden til 100% av viewport-bredden */
-    height: 30vh; /* Setter høyden til 30% av viewport-høyden */
-    overflow: hidden; /* Sørger for at bildet innhold ikke overskrider sin container */
+    width: 100vw;
+    /* Setter bredden til 100% av viewport-bredden */
+    height: 30vh;
+    /* Setter høyden til 30% av viewport-høyden */
+    overflow: hidden;
+    /* Sørger for at bildet innhold ikke overskrider sin container */
 }
 
 .OmOssBilde {
-    width: 100%; /* Setter bredden til 100% av containerens bredde */
-    height: 100%; /* Setter høyden til 100% av containerens høyde */
-    object-fit: cover; /* Sørger for at bildet dekker hele containeren og beholder proporsjonene */
+    width: 100%;
+    /* Setter bredden til 100% av containerens bredde */
+    height: 100%;
+    /* Setter høyden til 100% av containerens høyde */
+    object-fit: cover;
+    /* Sørger for at bildet dekker hele containeren og beholder proporsjonene */
 }
 
 .OmOssTekst {
     padding: 1%;
     font-family: "Open Sans", sans-serif;
-    font-size: 15px; 
+    font-size: 15px;
     line-height: 1.3;
     color: black;
     padding: 1%;
@@ -33,17 +38,20 @@
 
 .knappMedlem {
     background-color: #7800f0;
-    color: white; /* Tekstfarge */
-    padding: 10px 20px; /* Padding (øverst og nederst, venstre og høyre) */
-    font-family: "Bebas Neue", sans-serif; 
-    font-weight: 400; 
+    color: white;
+    /* Tekstfarge */
+    padding: 10px 20px;
+    /* Padding (øverst og nederst, venstre og høyre) */
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-    cursor: pointer; /* Endre musepekeren til en hånd når du svever over knappen */
+    cursor: pointer;
+    /* Endre musepekeren til en hånd når du svever over knappen */
     padding: 1%;
     margin-bottom: 1%;
     margin-left: 0.5%;
@@ -51,17 +59,18 @@
 
 .content-wrapper {
     display: flex;
-  }
-  
-  .left-content,
-  .right-content {
+}
+
+.left-content,
+.right-content {
     width: 50%;
-    position: relative; /* La oss bruke absolutt posisjonering innenfor disse konteinerne */
-  }
-  
-  .right-content iframe {
-    margin-top: 50%;
+    position: relative;
+    /* La oss bruke absolutt posisjonering innenfor disse konteinerne */
+}
+
+.right-content iframe {
+    margin-top: 45%;
     padding-left: 10%;
-    width: 80%; 
-  }
-  
+    margin-bottom: 10%;
+    width: 80%;
+}
