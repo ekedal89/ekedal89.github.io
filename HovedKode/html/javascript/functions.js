@@ -26,3 +26,6 @@
            window.location.href = "Forside.html";
        }
 
+       function fasilteter(){
+           window.location.href = "index.arragement.html";
+       }
