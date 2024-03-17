@@ -1,4 +1,5 @@
 .TittelOmOss {
+    padding-left: 1%;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -10,20 +11,14 @@
 
 .bilde-container {
     width: 100vw;
-    /* Setter bredden til 100% av viewport-bredden */
     height: 30vh;
-    /* Setter høyden til 30% av viewport-høyden */
     overflow: hidden;
-    /* Sørger for at bildet innhold ikke overskrider sin container */
 }
 
 .OmOssBilde {
     width: 100%;
-    /* Setter bredden til 100% av containerens bredde */
     height: 100%;
-    /* Setter høyden til 100% av containerens høyde */
     object-fit: cover;
-    /* Sørger for at bildet dekker hele containeren og beholder proporsjonene */
 }
 
 .OmOssTekst {
@@ -32,16 +27,12 @@
     font-size: 15px;
     line-height: 1.3;
     color: black;
-    padding: 1%;
 }
-
 
 .knappMedlem {
     background-color: #7800f0;
     color: white;
-    /* Tekstfarge */
     padding: 10px 20px;
-    /* Padding (øverst og nederst, venstre og høyre) */
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -51,7 +42,6 @@
     cursor: pointer;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
     cursor: pointer;
-    /* Endre musepekeren til en hånd når du svever over knappen */
     padding: 1%;
     margin-bottom: 1%;
     margin-left: 0.5%;
@@ -65,12 +55,30 @@
 .right-content {
     width: 50%;
     position: relative;
-    /* La oss bruke absolutt posisjonering innenfor disse konteinerne */
+
+
+}
+
+.right-content {
+    width: 50%;
+    position: relative;
+}
+
+.map-container {
+    position: absolute;
+    top: calc(50% + 15vh);
+    /* Plasserer kartet 15% viewport-høyde under midten av foreldrelementet */
+    left: 50%;
+    /* Plasserer kartet horisontalt midt i foreldrelementet */
+    transform: translate(-50%, -50%);
+    /* Midtstiller kartet innenfor foreldrelementet */
+    height: calc(30vh - 30px);
+    /* Endrer høyden på kartcontaineren */
+    width: 80%;
+    margin-top: 15px;
 }
 
 .right-content iframe {
-    margin-top: 45%;
-    padding-left: 10%;
-    margin-bottom: 10%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
 }
