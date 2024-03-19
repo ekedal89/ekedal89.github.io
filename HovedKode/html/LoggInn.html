@@ -4,11 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/skjelettStylesheet_b.css" type="text/css">
-        <link rel="stylesheet" href="css/MinSide.css" type="text/css">
+        <link rel="stylesheet" href="css/LoggInn.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk:MORF@4&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <script src="javascript/functions.js"></script>
+        <script src="https://kit.fontawesome.com/4753934c0c.js" crossorigin="anonymous"></script>
         <title>Booking</title>
     </head>
     <body>
@@ -49,38 +50,25 @@
         <div id="wrapper">
 
             <div id="box">
-                <div id="title">Min side</div>
                 <div id="innhold">
+                    <div id="title">Logg Inn</div>
                     <div id="inputs">
-                        <div class="txt2">Nåværende betalingsplan</div>
-                        <input value="Monthly Membership" readonly>
-                        <div class="txt">Endre Betalingsplan</div>
-                        <select id="medlemskap">
-                            <option value=""></option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                        <div class="txt">Navn/firm</div>
-                        <input>
-                        <div class="txt">E-post</div>
-                        <input>
-                        <div class="txt">Telefonummer</div>
-                        <input>
-                        <div class="txt">Adresse</div>
-                        <input>
-                        <div class="txt">Kortinformasjon</div>
-                        <input>
-                        <div class="txt">CVC</div>
-                        <input id="inpCvc">
-                        <a></a>
-                        <button id="registrerBtn">Registrer Betaling</button>
+                        <div class="field">
+                            <i style='font-size:24px' class='far'>&#xf2bd;</i>
+                            <input class="inp" placeholder="Email">
+                        </div>
+                        <div class="field">
+                            <i style='font-size:24px' class='fas'>&#xf084;</i>
+                            <input class="inp" placeholder="Passord">
+                        </div>
                     </div>
                 </div>
             </div>
+            
+            <div id="luft"></div>
+            
         </div>
         
-        <div id="luft"></div>
 
         <footer>
             <div class="footer">
@@ -96,10 +84,8 @@
                     Gullbringvegen 36   3800 Bø
                 </div>
                 <img class="footimg" src="images/USNSTART_HVIT.png" alt="">
-             </div>
+            </div>
         </footer>
     </body>
-    <script>
-       
-    </script>
+    
 </html>
