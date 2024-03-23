@@ -1,0 +1,111 @@
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#innhold{
+    background-color: #F3F3F3;
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #9e9e9e;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+
+#box{
+    margin-top: 20vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title{
+    margin-top: 2vh;
+    font-size: 175%;
+    font-family: "Bebas Neue", sans-serif; 
+    font-weight: bold;
+}
+
+#inputs{
+    width: 100%;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 65%);
+    grid-row-gap: 0vh;
+    justify-content: center;
+}
+
+.field{
+    width: 100%;
+    padding: 12px 1.2vw;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+}
+
+.inp{
+    height: 60%;
+    width: 100%;
+    padding: 10px 1.2vw;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+i{
+    margin-top: 1.2vh;
+}
+
+#logBtn{
+    background: linear-gradient(#7800f0, #2f0b63);
+    border: 1px solid black;
+    border-radius: 2px;
+    color: white;
+    height: 100%;
+    width: 7vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 120%;
+    cursor: pointer;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.15);
+    &:hover{
+       box-shadow: 8px 8px 30px rgba(0,0,0,0.30); 
+    }
+}
+
+#info{
+    width: 100%;
+    display: flex;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7vw;
+}
+
+.infTxt{
+    cursor: pointer;
+    color: darkblue;
+    &:hover{
+        text-decoration: underline;
+        color:blue;
+        
+    }
+}
+
+.luft{
+    padding-top: 19.99vh;
+}
+
+
+
