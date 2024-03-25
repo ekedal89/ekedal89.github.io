@@ -36,3 +36,6 @@
     function registrer() {
         window.location.href = "registrer.html";
     }
+    function showConfirmation() {
+        alert("Skjemaet ditt er innsendt");
+    }
