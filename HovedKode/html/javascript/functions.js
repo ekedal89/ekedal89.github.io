@@ -23,7 +23,7 @@
        }
 
        function forside(){
-           window.location.href = "Forside.html";
+           window.location.href = "index.html";
        }
 
        function fasilteter(){
