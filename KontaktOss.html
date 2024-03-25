@@ -88,9 +88,11 @@
 </div>
 
   <script>
-    function showConfirmation() {
-      alert("Skjemaet ble innsendt");
-      kontaktoss();
+    function showConfirm(){
+      if (confirm("Skjemaet ble innsendt") == true ){
+              window.location.href = "KontaktOss.html"; }
+      else {
+              window.location.href ="KontaktOss.html"}
 }
 
 </script>
