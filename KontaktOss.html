@@ -88,12 +88,17 @@
 </div>
 
   <script>
-    function showConfirm(){
-      if (confirm("Skjemaet ble innsendt") == true ){
-              window.location.href = "KontaktOss.html"; }
-      else {
-              window.location.href ="KontaktOss.html"}
+    function showConfirmation() {
+  // Viser alert-boksen
+  var confirmationAlert = alert("Skjemaet ble innsendt");
+
+  // Bruker en løkke for å vente på brukerinteraksjon
+  // Hvis brukeren ikke interagerer med alert-boksen, vil denne løkken fortsette å kjøre
+  while (confirmationAlert) {
+    // Venter på brukerinteraksjon
+  }
 }
+
 
 </script>
 
