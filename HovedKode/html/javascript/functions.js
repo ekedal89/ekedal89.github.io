@@ -33,3 +33,6 @@
        function login(){
         window.location.href = "LoggInn.html";
     }
+    function registrer() {
+        window.location.href = "registrer.html";
+    }
