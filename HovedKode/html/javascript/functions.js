@@ -29,3 +29,7 @@
        function fasilteter(){
            window.location.href = "Fasiliteter.html";
        }
+
+       function login(){
+        window.location.href = "LoggInn.html";
+    }
