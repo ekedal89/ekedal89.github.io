@@ -88,22 +88,10 @@
 </div>
 
   <script>
-function showConfirmation() {
-  // Viser alert-boksen og lagrer resultatet i en variabel
-  var confirmationAlert = alert("Skjemaet ble innsendt");
-
-  // Bruker en løkke for å vente på brukerinteraksjon
-  while (confirmationAlert) {
-    // Venter på brukerinteraksjon
-    // Vi kan sjekke om bekreftelsesalerten fremdeles er tilgjengelig ved å sjekke om det er 'null' eller 'undefined'
-    if (confirmationAlert == null || confirmationAlert == undefined) {
-      // Brukeren har lukket alert-boksen, så vi avslutter løkken
-      break;
-    }
-  }
+function reload() {
+  alert("Skjemaet ble innsendt");
+  window.location.reload();
 }
-
-
 
 </script>
 
