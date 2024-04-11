@@ -14,8 +14,8 @@
     
     .item {
         display: flex;
-        align-items: center; 
-        gap: 20px; 
+        flex-direction: column;
+        justify-content: center;
     }
     
     .pricebutton{
@@ -52,7 +52,14 @@
       .toph{
         padding: 1rem;
         width: 50vw;
-        margin-top: 1vh ;
+        margin-top: 1vh;
+        text-align: center;
+        margin-left: 25vw;
+        font-size: 20px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+          
       }
     
       .yap{
