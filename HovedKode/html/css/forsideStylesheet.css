@@ -25,6 +25,10 @@
     letter-spacing: 2px;
 }
 
+h1{
+    font-family: "Bebas Neue", sans-serif;
+}
+
 .innholdArrangementer {
     position: fixed;
     top: 26%;
