@@ -39,6 +39,7 @@
     font-size: 15px;
     z-index: 4;
     margin-left: 5em;
+    margin-right:5em;
 }
 
 .coworkingman {
@@ -89,6 +90,7 @@
     font-size: 15px;
     z-index: 4; /* Plassert over det hvite laget (z-index: 3) */
     margin-left: 5em;
+    margin-right:5em;
     top: 40%;
 }
 
