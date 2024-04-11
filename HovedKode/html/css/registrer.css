@@ -58,8 +58,7 @@ input, select{
 }
 
 .txt, .txt2{
-    color: #919191;
-    font-size: 110%;
+    font-family: "Open Sans", sans-serif;
 }
 
 .txt2{
